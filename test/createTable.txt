@@ -1,0 +1,5 @@
+CREATE TABLE jobnetwork.offre (
+    numOffre int PRIMARY KEY,
+    titre text,
+    description text
+);

@@ -1,0 +1,1 @@
+INSERT INTO jobnetwork.offre(numOffre,titre,description) VALUES(1,'ecommerce','gestiondecommande');

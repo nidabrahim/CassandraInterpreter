@@ -1,0 +1,11 @@
+flex -i Cassandra.l
+gcc -c lex.yy.c
+gcc -c Cassandra.c
+gcc -c CassandraErreur.c
+gcc -c json.c
+gcc -c fin.c
+gcc -o cqlc lex.yy.o Cassandra.o fin.o json.o CassandraErreur.o -lfl
+
+
+
+

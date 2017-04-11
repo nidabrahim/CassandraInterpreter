@@ -1,0 +1,2 @@
+CREATE KEYSPACE jobnetwork
+          WITH replication = {'class': 'SimpleStratgy', 'replication_factor' : 1};

@@ -1,0 +1,72 @@
+ALTER KEYSPACE Excelsior
+          WITH replication = {'class': 'SimpleStratgy', 'replication_factor' : 4};
+
+ALTER KEYSPACE Excelsior
+          WITH repli = {'class': 'SimpleStratgy', 'replication_factor' : 4};
+
+ALTER KEYSPACE Excelsior
+          WITH replication = {'clss': 'SimpleStratgy', 'replication_factor' : 4};
+
+ALTER KEYSPACE Excelsior
+          WITH replication = {'class': 'Sifdfdfegy', 'replication_factor' : 4};
+
+ALTER KEYSPACE Excelsior
+          WITH replication = {'class': 'SimpleStratgy', 'factor' : 4};
+
+ALTER KEYSPACE Excelsior
+          WITH replication = {'class': 'SimpleStratgy', 'replication_factor' : 'ooo'};
+
+ALTER KEYSPACE Excelsior
+          WITH replication = {'class': 'SimpleStratgy', 'replication_factor' : 4,'factor' : true};
+
+CREATE KEYSPACE Excalibur
+           WITH replication = {'class': 'NetworkTopologyStrategy', 'DC1' : 1, 'DC2' : 3}
+            AND durable_writes = false;
+
+CREATE KEYSPACE Excalibur
+           WITH replication = {'class': 'NetworkTopologyStrategy'}
+            AND durable_writes = false;
+
+CREATE KEYSPACE Excalibur
+           WITH replication = {'class': 'NetworkTopologyStrategy', 'DC1' : 'o', 'DC2' : 3}
+            AND durable_writes = 18;
+
+CREATE TABLE monkeySpecies (
+    species text PRIMARY KEY,
+    common_name text,
+    population varint,
+    average_size int
+) WITH comment='Commentaire'
+   AND read_repair_chance = 1.0;
+
+CREATE TABLE monkeySpecies (
+    species text PRIMARY KEY,
+    common_name text PRIMARY KEY,
+    population varint,
+    average_size int
+) WITH comment='commentaire'
+   AND read_repair_chance = 1.0;
+
+CREATE TABLE monkeySpecies (
+    species text STATIC PRIMARY KEY,
+    common_name text,
+    population varint,
+    average_size int
+) WITH comment='commentaire'
+   AND read_repair_chance = 1.0;
+
+CREATE TABLE timeline (
+    userid uuid,
+    posted_month int,
+    posted_time uuid,
+    body text,
+    posted_by text,
+    PRIMARY KEY (hye, posted_month, posted_time)
+) WITH compaction = { 'class' : 'LeveledCompactionStrategy' };
+ AND tititi = 8;
+
+ALTER TABLE addamsFamily
+WITH comment = 'Commentaire'
+ AND read_repair = 0.2;
+
+INSERT INTO keyspace1.table9(num,nom,prenom,age) VALUES(1,'nida','youssef',23);
